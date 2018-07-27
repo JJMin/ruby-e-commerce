@@ -132,5 +132,24 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+User.create!({
+  first_name: 'Eric',
+  last_name: 'Joo',
+  email: 'ejoo@example.com'
+})
+
+Review.create!({
+  product_id: 2,
+  user_id: 1,
+  description: "Felt meh.",
+  rating: 2
+})
+
+Review.create!({
+  product_id: 5,
+  user_id: 1,
+  description: "How did I live without this in my life??",
+  rating: 5
+})
 
 puts "DONE!"
